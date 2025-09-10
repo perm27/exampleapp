@@ -6,12 +6,16 @@ import '@aws-amplify/ui-react/styles.css';
 function App({ signOut, user }) {
   return (
     <View className="App">
+      <div>
+        <p>Hello {user.username}</p>
+        <Button onClick={signOut}>Sign Out</Button>
+        <UserList />
+      </div>
       <Card>
         <Heading level={1}>Hello, {user.username}  example check.</Heading>
       </Card>
       <Button onClick={signOut}>Sign Out</Button>
       <h1>aaaaa</h1>
-s
     </View>
   );
 }
