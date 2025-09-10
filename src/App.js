@@ -7,7 +7,7 @@ function App({ signOut, user }) {
   return (
     <View className="App">
       <div>
-        <p>Hello {user.username}</p>
+        <p>Hello {user.username}  cccccccccccc</p>
         <Button onClick={signOut}>Sign Out</Button>
         <UserList />
       </div>
